@@ -6,3 +6,4 @@
 | 模块  |  解释  |  备注  |
 |:----:|:----:|:----:|
 | tr-baidu-unit | 百度自然语言处理 | [文档](https://ai.baidu.com/docs#/UNIT-v2-intro/top) |
+| tr-eicbc-elife | 工银e生活接口调研 | * |
