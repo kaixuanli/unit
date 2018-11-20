@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>tr-baidu-unit</artifactId>
+    <artifactId>tr-baidu-face</artifactId>
     <packaging>jar</packaging>
 
-    <name>tr-baidu-unit</name>
-    <description>理解与交互技术unit技术调研</description>
+    <name>tr-baidu-face</name>
+    <description>人脸识别接口调研</description>
 
     <parent>
         <groupId>cn.com.innodev</groupId>

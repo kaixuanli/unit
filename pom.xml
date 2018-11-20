@@ -26,6 +26,7 @@
 
     <modules>
         <module>tr-baidu-unit</module>
+        <module>tr-baidu-face</module>
         <module>tr-eicbc-elife</module>
     </modules>
 
