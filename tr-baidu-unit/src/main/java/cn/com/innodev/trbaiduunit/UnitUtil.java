@@ -3,6 +3,7 @@ package cn.com.innodev.trbaiduunit;
 import org.json.JSONObject;
 
 import java.util.Scanner;
+import java.util.UUID;
 
 /**
  * 获取token：https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id=3xpzaeCFjgBLgHNvI5He0SCH&client_secret=e5wHgs07wpGyRiV8ZQ3NRXbVLw00nW8O
@@ -30,7 +31,7 @@ public class UnitUtil {
      * 理解与交互技术unit  foreign
      */
     private static void foreign() {
-        ForeignBot bot = new ForeignBot(1)
+        ForeignBot bot = new ForeignBot(UUID.randomUUID().toString())
                 .initClient(client)
                 .chat("预约外币");
         while (!bot.isRequestDone()) {

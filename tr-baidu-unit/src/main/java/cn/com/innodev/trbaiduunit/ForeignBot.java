@@ -126,7 +126,11 @@ public class ForeignBot {
         String curBotSession = result.getString("bot_session");
         JSONObject action = response.getJSONArray("action_list").getJSONObject(0);
         this.botSay = action.getString("say");
-        if (!action.getString("type").equals("satisfy")) {
+        if (action.getString("type").equals("failure")){
+            // 调用失败了， bot没有正确理解用户的意图
+            this.requestDone = false;
+            this.resetSession(this.botSession);
+        } else if (!action.getString("type").equals("satisfy")) {
             this.resetSession(curBotSession);
         } else {
             JSONObject schema = response.getJSONObject("schema");
